@@ -151,10 +151,14 @@ namespace MegaDesk_3_CarleeMurphy
 
         public void writeToFile(Desk desk)
         {
+            DateTime date = new DateTime();
+            date = DateTime.Now;
+
             StreamWriter writer;
             writer = new StreamWriter("quotes.txt", append: true);
-            writer.Write("\n{0},{1},{2},{3},{4},{5},{6}\r\n", 
+            writer.WriteLine("{0},{1},{2},{3},{4},{5},{6},${7}",
                 desk.purchaserName,
+                date,
                 desk.width.ToString(),
                 desk.depth.ToString(),
                 desk.numberOfDrawers.ToString(),
@@ -163,23 +167,7 @@ namespace MegaDesk_3_CarleeMurphy
                 desk.price
                 );
             writer.Close();
+
         }
-        /*
-        // Check if quote matches parameters.
-        public bool checkParameters(Desk desk)
-        {
-            bool correctParamaters = false;
-
-
-
-
-            //if not, pop-up with error message.
-            if (correctParamaters == false)
-            {
-                MessageBox.Show("We cannot create a desk with those specifications.  " +
-                    "Please enter valid values.");
-            }
-            return correctParamaters;
-        }*/
     }
 }

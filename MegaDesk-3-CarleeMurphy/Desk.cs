@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace MegaDesk_3_CarleeMurphy
 {
-    public enum SurfaceMaterial
+    public enum DesktopMaterial
     {
-        Oak,
-        Laminate,
-        Pine,
-        Rosewood,
-        Veneer
+        Oak = 50,
+        Laminate = 60,
+        Pine = 70,
+        Rosewood = 80,
+        Veneer = 90
     };
 
-    class Desk
+    struct Desk
     {
         private int _width;
         private int _depth;
@@ -24,7 +24,7 @@ namespace MegaDesk_3_CarleeMurphy
         private string _orderType;
         private string _price;
         private DateTime _date;
-        private SurfaceMaterial _surfaceMaterial;
+        private DesktopMaterial _surfaceMaterial;
 
         public int width
         {
@@ -68,7 +68,7 @@ namespace MegaDesk_3_CarleeMurphy
             set { _date = value; }
         }
 
-        public SurfaceMaterial surfaceMaterial
+        public DesktopMaterial surfaceMaterial
         {
             get { return _surfaceMaterial; }
             set { _surfaceMaterial = value; }

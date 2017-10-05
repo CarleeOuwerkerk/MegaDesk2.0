@@ -15,6 +15,18 @@ namespace MegaDesk_3_CarleeMurphy
         public GetQuote()
         {
             InitializeComponent();
+            List<DesktopMaterial> materials = new List<DesktopMaterial>();
+
+            materials.Add(DesktopMaterial.Laminate);
+            materials.Add(DesktopMaterial.Oak);
+            materials.Add(DesktopMaterial.Pine);
+            materials.Add(DesktopMaterial.Rosewood);
+            materials.Add(DesktopMaterial.Veneer);
+
+            //foreach (int i in Enum.GetValues(typeof(DesktopMaterial)))
+            //    materials.Add(i);
+
+            MaterialBox.DataSource = materials;
         }
 
         private void BackButton_Click(object sender, EventArgs e)
@@ -31,19 +43,19 @@ namespace MegaDesk_3_CarleeMurphy
             switch (MaterialBox.Text)
             {
                 case "Oak":
-                    desk.surfaceMaterial = SurfaceMaterial.Oak;
+                    desk.surfaceMaterial = DesktopMaterial.Oak;
                     break;
                 case "Laminate":
-                    desk.surfaceMaterial = SurfaceMaterial.Laminate;
+                    desk.surfaceMaterial = DesktopMaterial.Laminate;
                     break;
                 case "Pine":
-                    desk.surfaceMaterial = SurfaceMaterial.Pine;
+                    desk.surfaceMaterial = DesktopMaterial.Pine;
                     break;
                 case "Rosewood":
-                    desk.surfaceMaterial = SurfaceMaterial.Rosewood;
+                    desk.surfaceMaterial = DesktopMaterial.Rosewood;
                     break;
                 case "Veneer":
-                    desk.surfaceMaterial = SurfaceMaterial.Veneer;
+                    desk.surfaceMaterial = DesktopMaterial.Veneer;
                     break;
 
             }
@@ -58,7 +70,6 @@ namespace MegaDesk_3_CarleeMurphy
             DeskQuote deskQuote = new DeskQuote();
 
             //check parameters are correct
-           // bool deskQuoteVerified = deskQuote.checkParameters(desk);
 
             // If correct, calculate price.
             int drawerPrice = deskQuote.getDrawerPrice(desk.numberOfDrawers);
@@ -103,8 +114,10 @@ namespace MegaDesk_3_CarleeMurphy
 
         }
 
+        
         private void WidthField_Validating(object sender, CancelEventArgs e)
         {
+            /*
             string errorMsg;
            
             if(!ValidWidthInput(WidthField.Text, out errorMsg))
@@ -113,12 +126,12 @@ namespace MegaDesk_3_CarleeMurphy
                 WidthField.Select(0, WidthField.Text.Length);
 
              //   this.errorProvider1.SetError(DepthField, errorMsg);
-            }
+            }*/
         }
-
+        /*
         private bool ValidWidthInput(string width, out string errorMessage)
         {
-
+        
             if (!isInputInteger(width))
             {
                 errorMessage = errorMessage = "Please enter a valid width between 24 and 96 square inches.";
@@ -137,10 +150,10 @@ namespace MegaDesk_3_CarleeMurphy
                      return false;
             }
            
-        }
-
+    }
+    
         private bool isInputInteger(string width)
-        {
+        {/*
             try
             {
                 int.Parse(width);
@@ -150,6 +163,8 @@ namespace MegaDesk_3_CarleeMurphy
             {
                 return false;
             }
+        
         }
+        */
     }
 }

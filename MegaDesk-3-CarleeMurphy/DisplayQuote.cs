@@ -27,7 +27,7 @@ namespace MegaDesk_3_CarleeMurphy
             DrawerQuote.Text = desk.numberOfDrawers.ToString();
             MaterialQuote.Text = desk.surfaceMaterial.ToString();
             ShippingQuote.Text = desk.orderType;
-            PriceQuote.Text = desk.price;
+            PriceQuote.Text = "$" + desk.price;
             
         }
 

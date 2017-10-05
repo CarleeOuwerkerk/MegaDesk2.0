@@ -105,9 +105,14 @@
             0,
             0,
             0});
+            this.WidthField.Minimum = new decimal(new int[] {
+            24,
+            0,
+            0,
+            0});
             this.WidthField.Name = "WidthField";
             this.WidthField.Size = new System.Drawing.Size(136, 22);
-            this.WidthField.TabIndex = 8;
+            this.WidthField.TabIndex = 2;
             this.WidthField.Value = new decimal(new int[] {
             24,
             0,
@@ -130,7 +135,7 @@
             0});
             this.DepthField.Name = "DepthField";
             this.DepthField.Size = new System.Drawing.Size(136, 22);
-            this.DepthField.TabIndex = 9;
+            this.DepthField.TabIndex = 3;
             this.DepthField.Value = new decimal(new int[] {
             12,
             0,
@@ -148,7 +153,7 @@
             0});
             this.DrawerField.Name = "DrawerField";
             this.DrawerField.Size = new System.Drawing.Size(136, 22);
-            this.DrawerField.TabIndex = 10;
+            this.DrawerField.TabIndex = 4;
             // 
             // MaterialLabel
             // 
@@ -204,16 +209,10 @@
             // MaterialBox
             // 
             this.MaterialBox.FormattingEnabled = true;
-            this.MaterialBox.Items.AddRange(new object[] {
-            "Laminate",
-            "Oak",
-            "Rosewood",
-            "Veneer",
-            "Pine"});
             this.MaterialBox.Location = new System.Drawing.Point(159, 195);
             this.MaterialBox.Name = "MaterialBox";
             this.MaterialBox.Size = new System.Drawing.Size(136, 24);
-            this.MaterialBox.TabIndex = 24;
+            this.MaterialBox.TabIndex = 5;
             // 
             // ShippingBox
             // 
@@ -225,7 +224,7 @@
             this.ShippingBox.Location = new System.Drawing.Point(159, 231);
             this.ShippingBox.Name = "ShippingBox";
             this.ShippingBox.Size = new System.Drawing.Size(136, 24);
-            this.ShippingBox.TabIndex = 25;
+            this.ShippingBox.TabIndex = 6;
             // 
             // GetQuote
             // 

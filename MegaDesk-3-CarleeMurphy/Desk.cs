@@ -4,10 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/// <summary>
-/// test
-/// </summary>
-
 namespace MegaDesk_3_CarleeMurphy
 {
     public enum DesktopMaterial

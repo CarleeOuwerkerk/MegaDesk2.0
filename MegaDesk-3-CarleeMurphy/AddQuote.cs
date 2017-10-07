@@ -17,14 +17,8 @@ namespace MegaDesk_3_CarleeMurphy
             InitializeComponent();
             List<DesktopMaterial> materials = new List<DesktopMaterial>();
 
-            materials.Add(DesktopMaterial.Laminate);
-            materials.Add(DesktopMaterial.Oak);
-            materials.Add(DesktopMaterial.Pine);
-            materials.Add(DesktopMaterial.Rosewood);
-            materials.Add(DesktopMaterial.Veneer);
-
-            //foreach (int i in Enum.GetValues(typeof(DesktopMaterial)))
-            //    materials.Add(i);
+            foreach (DesktopMaterial deskMaterial in Enum.GetValues(typeof(DesktopMaterial)))
+                materials.Add(deskMaterial);
 
             MaterialBox.DataSource = materials;
         }

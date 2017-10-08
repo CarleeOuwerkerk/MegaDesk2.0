@@ -46,7 +46,7 @@
             // MainMenu
             // 
             this.MainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MainMenu.Location = new System.Drawing.Point(12, 314);
+            this.MainMenu.Location = new System.Drawing.Point(15, 440);
             this.MainMenu.Name = "MainMenu";
             this.MainMenu.Size = new System.Drawing.Size(99, 28);
             this.MainMenu.TabIndex = 19;
@@ -97,7 +97,7 @@
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
             this.dataGridView.RowTemplate.Height = 24;
-            this.dataGridView.Size = new System.Drawing.Size(558, 268);
+            this.dataGridView.Size = new System.Drawing.Size(814, 394);
             this.dataGridView.TabIndex = 27;
             // 
             // Customer
@@ -158,7 +158,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(582, 353);
+            this.ClientSize = new System.Drawing.Size(838, 480);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.MaterialBox);
             this.Controls.Add(this.SelectMaterialLabel);

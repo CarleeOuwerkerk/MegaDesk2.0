@@ -183,18 +183,17 @@ namespace MegaDesk_3_CarleeMurphy
             }
 
             // Read all
-            string[] prices = File.ReadAllLines(filePath);
+            string[] quotePrice = File.ReadAllLines(filePath);
 
             // Initialize a 2D array
             int[,] priceArray = new int[2, 2];
-            int pricesCount = 0;
+            int priceCount = 0;
             // Populates array
-            for (int row = 0; row < 2; row++)
+            for (int rows = 0; rows < 2; rows++)
             {
-                for (int col = 0; col < 2; col++)
+                for (int column = 0; column < 2; column++)
                 {
-                    // Add the price to our 2D array
-                    priceArray[row, col] = Int32.Parse(prices[pricesCount++]);
+                    priceArray[rows, column] = Int32.Parse(quotePrice[priceCount++]);
                 }
             }
 

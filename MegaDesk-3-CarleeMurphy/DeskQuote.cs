@@ -179,7 +179,7 @@ namespace MegaDesk_3_CarleeMurphy
             // Immediately error out if the file path does not exist. 
             if (!File.Exists(filePath))
             {
-                throw new Exception("ERROR: Rush days configuration file does not exist.");
+                throw new Exception("ERROR: Rush days file do not exist.");
             }
 
             // Read all
